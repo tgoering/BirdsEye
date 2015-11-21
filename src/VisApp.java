@@ -1,13 +1,23 @@
 import java.awt.EventQueue;
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class VisApp{
+	public ArrayList<ArrayList<JSONTweet>> tweets = new ArrayList<ArrayList<JSONTweet>>();
+	private JFrame appFrame;
+	
 	public VisApp(){
-		String filename;
-		ArrayList<ArrayList<JSONTweet>> tarray = new ArrayList<ArrayList<JSONTweet>>();  
+		readData();
+		createPanel();
+	}
+	
+	public void readData(){
+	/*	String filename;
+		
 		for(int i = 0; i < 24; i++){
 			for(int j = 0; j < 60; j++){
 				if(i < 10){
@@ -27,13 +37,21 @@ public class VisApp{
 					}
 				}
 				
-				ArrayList<JSONTweet> tweets = new ArrayList<JSONTweet>();
+				ArrayList<JSONTweet> minute = new ArrayList<JSONTweet>();
 				JSONReader input = new JSONReader();
-				input.readJSON(filename, tweets);
-				tarray.add(tweets);
+				input.readJSON(filename, minute);
+				tweets.add(minute);
 				System.out.println("COMPLETED HOUR " + i + " MIN " + j);
 			}
-		}
+		}*/
+	}
+	
+	public void createPanel(){
+		appFrame = new JFrame();
+		appFrame.setTitle("TwitterVis");
+		appFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		appFrame.setBounds(100, 100, 1000, 600);
+		appFrame.setVisible(true);
 	}
 	
 	public static void main(String[] args){

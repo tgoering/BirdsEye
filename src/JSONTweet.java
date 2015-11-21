@@ -1,5 +1,4 @@
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 
 public class JSONTweet{
 	public String text;
