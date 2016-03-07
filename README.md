@@ -1,6 +1,6 @@
 ##Bird's Eye
 Bird's Eye is a comprehensive tool for identifying and analyzing temporal and geospatial relationships that influence the spread of ideas on the social media platform Twitter.  Simply load your own data, search for a keyword, and hit play.  Then see your data visualized in real-time as Tweets light up on the map.  View statistical summary information such as the keyword's frequency over time, as well as the frequencies of related keywords.
-![demo](./tree/master/resources/demo.gif?raw=true "Demo")
+![demo](./resources/demo.gif?raw=true "Demo")
 
 ##Authors
 - Jeffrey Hamilton  
